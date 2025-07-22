@@ -21,7 +21,6 @@ public class Robot extends TimedRobot
 		robotContainer = new RobotContainer();
 
 		// TODO: edit this method
-		EndEffector.getInstance().setDefaultCommand(new Intake());
 	}
 
 	@Override
