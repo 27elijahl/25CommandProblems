@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
+import frc.robot.commands.elevator.Intake;
 import frc.robot.subsystems.EndEffector;
 
 public class Robot extends TimedRobot 
@@ -20,6 +21,7 @@ public class Robot extends TimedRobot
 		robotContainer = new RobotContainer();
 
 		// TODO: edit this method
+		EndEffector.getInstance().setDefaultCommand(new Intake());
 	}
 
 	@Override
